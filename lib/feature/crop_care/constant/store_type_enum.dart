@@ -1,0 +1,4 @@
+enum StoreType {
+  SEED,
+  FERTILIZER,
+}

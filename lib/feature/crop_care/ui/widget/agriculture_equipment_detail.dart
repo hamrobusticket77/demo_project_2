@@ -1,0 +1,58 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:krishi_hub/common/common_error_widget.dart';
+import 'package:krishi_hub/common/common_nodata_widget.dart';
+import 'package:krishi_hub/common/constant/locale_keys.dart';
+import 'package:krishi_hub/common/cubit/data_state.dart';
+import 'package:krishi_hub/common/utils/size_utils.dart';
+import 'package:krishi_hub/common/widget/app_bar/custom_app_bar.dart';
+import 'package:krishi_hub/common/widget/shimmer/shimmer_widget.dart';
+import 'package:krishi_hub/feature/crop_care/cubit/get_agriclture_equipment_detail_cubit.dart';
+import 'package:krishi_hub/feature/crop_care/cubit/get_agriculture_equipment_cubit.dart';
+import 'package:krishi_hub/feature/crop_care/model/doctor_record_model.dart';
+import 'package:krishi_hub/feature/crop_care/ui/widget/commonservice_good_purchase_widget.dart';
+
+class AgricultureEquipmentDetail extends StatefulWidget {
+  const AgricultureEquipmentDetail({super.key});
+
+  @override
+  State<AgricultureEquipmentDetail> createState() => _InsuranceDetailState();
+}
+
+class _InsuranceDetailState extends State<AgricultureEquipmentDetail> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: CustomAppBar(
+        title: LocaleKeys.agricultureEquipmentDetail.tr(),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            BlocBuilder<GetAgricultureEquipmentDetailCubit, CommonState>(
+              builder: (context, state) {
+                if (state is CommonLoading) {
+                  return ListViewPlaceHolder(
+                    itemHeight: 100.hp,
+                  );
+                } else if (state is CommonError) {
+                  return CommonErrorWidget(
+                    message: state.message,
+                  );
+                } else if (state is CommonNoData) {
+                  return const Center(child: CommonNoDataWidget());
+                } else if (state is CommonStateSuccess<DoctorRecordModel>) {
+                  return CommonServiceGoodPurchaseWidget(
+                    doctorRecordModel: state.data,
+                  );
+                }
+                return const SizedBox();
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,102 @@
+name: krishi_hub
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+  
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.3
+  easy_localization: ^3.0.3
+  cached_network_image: ^3.2.3
+  flutter_cache_manager: ^3.3.1
+  page_transition: ^2.1.0
+  fluttertoast: ^8.2.2
+  connectivity_plus: ^5.0.2
+  permission_handler: ^11.0.0
+  nepali_utils: ^3.0.3
+  dio: ^5.3.3
+  shimmer: ^3.0.0
+  equatable: ^2.0.5
+  marquee: ^2.2.3
+  hive_flutter: ^1.1.0
+  timeline_tile: ^2.0.0
+  flutter_svg: ^2.0.7
+  flutter_downloader: ^1.11.3
+  path_provider:
+  flutter_widget_from_html_core: ^0.14.11
+  youtube_player_iframe: ^4.0.4
+  carousel_slider: ^4.2.1
+  logger: ^2.0.2+1
+  json_annotation: ^4.8.1
+  sliver_tools: ^0.2.12
+  image_picker: ^1.0.7
+  pretty_dio_logger: ^1.3.1
+  freezed_annotation: ^2.4.1
+  url_launcher: ^6.1.14
+  path: ^1.8.3
+  pull_to_refresh: ^2.0.0 
+  syncfusion_flutter_pdfviewer: ^24.1.47
+  device_info_plus: any
+  awesome_notifications: ^0.8.2
+  upgrader: ^9.0.0
+  flutter_secure_storage: ^9.0.0
+  awesome_notifications_fcm: ^0.8.0
+  firebase_core: ^2.23.0
+  socket_io_client: ^2.0.3+1
+  google_fonts: ^6.1.0
+  
+
+
+  intl: 
+  device_preview: ^1.1.0 
+  timeago: ^3.6.0
+  web_socket_channel: ^2.4.0
+  package_info_plus: ^5.0.1
+  in_app_update: ^4.2.2
+
+
+  
+    
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.4.3
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+  
+
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.1
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  remote_alpha_ios: true
+  image_path: "assets/images/app_icon_new.png"
+  adaptive_icon_background: "assets/images/app_icon_background.png"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/translations/
+    - assets/svg/
+

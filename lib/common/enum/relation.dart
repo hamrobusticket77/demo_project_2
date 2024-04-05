@@ -1,0 +1,12 @@
+enum Relation {
+  GRAND_FATHER,
+  GRAND_MOTHER,
+  FATHER,
+  MOTHER,
+  SISTER,
+  BROTHER,
+  SON,
+  DAUGHTER,
+  HUSBAND,
+  WIFE,
+}

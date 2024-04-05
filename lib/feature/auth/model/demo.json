@@ -1,0 +1,70 @@
+{
+    "status": true,
+    "message": "Fetch successfully",
+    "data": {
+        "data": {
+            "id": "aa2a91a2-9b57-4866-9a70-7fb6a156c032",
+            "addedBy": "ADMIN",
+            "userId": null,
+            "farmerPersonalInformation": {
+                "id": "a9fe5925-8597-412d-b57a-db9e7a2e10ce",
+                "firstName": {
+                    "en": "Bijaya",
+                    "ne": "बिजय"
+                },
+                "middleName": {
+                    "en": "Kumar",
+                    "ne": "कुमार"
+                },
+                "lastName": {
+                    "en": "Shah",
+                    "ne": "साह"
+                },
+                "gender": "MALE",
+                "phoneNumber": "9845678901",
+                "dateOfBirth": "2056-01-01",
+                "academicQualification": "LITERATE",
+                "literateLevel": "GRADUATION",
+                "ward": 7,
+                "village": "2",
+                "farmVillage": "Ithari",
+                "farmWard": 5,
+                "citizenshipNumber": "012-1234-1213",
+                "citizenshipIssuedDistrict": "Morang",
+                "citizenshipIssuedDate": null,
+                "agricultureArea": "पशुपन्छी",
+                "agricultureSubArea": "परेवा",
+                "isOwnLand": true,
+                "landArea": {
+                    "biggha": "193",
+                    "katha": "81",
+                    "dhur": "01"
+                },
+                "yearlyTurnOver": {
+                    "agriculture": 100000,
+                    "nonAgriculture": 50000,
+                    "total": 150000
+                },
+                "averageMonthEngageOnAgriculture": "5",
+                "farmerCategory": "LargeFarmer",
+                "profileMedia": {
+                    "id": 11,
+                    "relatedTo": "Farmer",
+                    "medias": [
+                        {
+                            "id": "6e72257f-a68e-47c7-4df9-ab9fde2149e3",
+                            "createdAt": "2023-09-25T10:46:40.403Z",
+                            "deletedAt": null,
+                            "fileName": "1695638800388-969041698.jpeg",
+                            "type": "image/jpeg",
+                            "relatedTo": "Farmer",
+                            "path": "https://krishihub.cliffbyte.com/Farmer/1695638800388-969041698.jpeg"
+                        }
+                    ]
+                },
+                "certificateNumber": 501,
+                "group": null
+            }
+        }
+    }
+}
